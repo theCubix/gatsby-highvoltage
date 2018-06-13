@@ -1,0 +1,35 @@
+/* Global imports and variables */
+@import "variables";
+@import "media-mixins";
+@import "typography";
+@import "header";
+
+/* Pages styles */
+@import "./frontpage/index.scss";
+
+body {
+  background-color: $red-d2;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main-wrapper {
+  min-height: 100vh;
+  background-color: $dark-pr;
+}
+
+.container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 100%;
+  position: relative;
+  width: 780px;
+
+  @include phone {
+    padding: 0 16px;
+  }
+}
+
+.nomargin {
+  margin: 0;
+}

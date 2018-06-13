@@ -1,0 +1,25 @@
+.header {
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 16px;
+  position: fixed;
+  z-index: 666;
+  background-color: rgba($dark-pr, 0.8);
+
+  &__title {
+    font-size: 18px;
+    line-height: 18px;
+    margin: 0;
+  }
+  &__link {
+    text-decoration: none;
+  }
+}
+
+@supports (backdrop-filter: inherit) or (-webkit-filter: inherit) {
+  .header {
+    background-color: rgba($dark-pr, 0.7);
+    backdrop-filter: blur(10px);
+  }
+}
