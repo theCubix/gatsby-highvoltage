@@ -14,8 +14,9 @@ body {
 }
 
 .main-wrapper {
-  min-height: 100vh;
   background-color: $dark-pr;
+  padding-top: 50px;
+  min-height: 100vh;
 }
 
 .container {
