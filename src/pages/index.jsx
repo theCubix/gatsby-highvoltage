@@ -4,8 +4,8 @@ import Helmet from 'react-helmet'
 import Img from "gatsby-image";
 
 const IndexPage = ({ data }) => (
-  <div>
-    <section style={{minHeight: "200vh"}} className="fp-atf">
+  <div style={{minHeight: "200vh"}}>
+    <section className="fp-atf">
       <Img style={{width: "100%", height: 0, paddingTop: "41.125%"}} resolutions={data.atfImage.childImageSharp.resolutions}/>
       <div className="fp-atf__textwrapper">
         <div className="container">
